@@ -4,7 +4,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 🛠️ Setup Instructions (Steps to Run Notebook)
+## Setup Instructions (Steps to Run Notebook)
 
 1. **Environment Setup**:
    - Google Colab or local Python environment with GPU recommended
@@ -36,7 +36,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 📁 Dataset Preparation
+##  Dataset Preparation
 
 - **Regions Used**:
   - `New South Wales, Australia`: 093/084
@@ -56,7 +56,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 🧠 CMSN Model Architecture
+##  CMSN Model Architecture
 
 - **ResFFTConv**:
   - Applies 2D FFT, followed by two convolutions + skip connection
@@ -71,7 +71,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 📉 Loss Function (CMSNLoss)
+##  Loss Function (CMSNLoss)
 
 - **Multi-temporal Global-Local Loss**: Preserves clear regions and reconstructs cloudy ones
 - **Frequency Reconstruction Loss**: Uses 2D FFT to ensure frequency alignment
@@ -80,7 +80,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 🔍 Evaluation Metrics
+## Evaluation Metrics
 
 - **NDVI (Normalized Difference Vegetation Index)**:
   ```python
@@ -97,7 +97,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 🧗 Challenges and Solutions
+##  Challenges and Solutions
 
 ### 1. **NaN Values in Training**
 - **Issue**: NaN loss during training due to image patches containing invalid pixels
@@ -125,7 +125,7 @@ This report documents the implementation and experimentation of the CMSN (Cloud-
 
 ---
 
-## 🏁 Suggestions for Future Work
+##  Suggestions for Future Work
 
 - Add dropout to avoid overfitting
 - Experiment with different optimizers (e.g., AdamW, Ranger)
