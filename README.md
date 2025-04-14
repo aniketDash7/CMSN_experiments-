@@ -1,6 +1,6 @@
 # CMSN Cloud Removal Project Report
 
-This report documents the implementation and experimentation of the CMSN (Cloud-aware Multi-temporal Satellite Network) model as described in the referenced paper. The primary goal is to reconstruct cloud-free remote sensing images from multi-temporal, cloud-contaminated Landsat imagery using frequency and spatial domain learning.
+This report documents the implementation and experimentation of the CMSN (Coarse-to-refined multi-temporal synchronous cloud removal network) model as described in the referenced paper. The primary goal is to reconstruct cloud-free remote sensing images from multi-temporal, cloud-contaminated Landsat imagery using frequency and spatial domain learning.
 
 ---
 
